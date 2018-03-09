@@ -1,0 +1,94 @@
+{
+    "root": true,
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "extends": "airbnb-base",
+    "plugins": [],
+    "rules": {
+        "max-len": [
+            "error",
+            200
+        ],
+        "curly": [
+            "error",
+            "all"
+        ],
+        "brace-style": [
+            "error",
+            "1tbs",
+            {
+                "allowSingleLine": false
+            }
+        ],
+        "quotes": [
+            "error",
+            "double",
+            {
+                "avoidEscape": true,
+                "allowTemplateLiterals": true
+            }
+        ],
+        "no-plusplus": "off",
+        "no-underscore-dangle": "off",
+        "newline-before-return": "error",
+        "no-unused-vars": [
+            "error",
+            {
+                "vars": "all",
+                "args": "all",
+                "argsIgnorePattern": "^_"
+            }
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1,
+                "maxEOF": 0
+            }
+        ],
+        "no-use-before-define": [
+            "error",
+            {
+                "functions": false,
+                "classes": true
+            }
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "space-before-function-paren": [
+            "error",
+            {
+                "anonymous": "always",
+                "named": "never",
+                "asyncArrow": "always"
+            }
+        ],
+        "import/extensions": "off",
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": [
+                    "truffle*.js",
+                    "migrations/**/*.js",
+                    "test/**/*.js"
+                ]
+            }
+        ],
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "prefer-destructuring": "off"
+    },
+    "globals": {
+        "artifacts": false
+    }
+}
